@@ -1,2 +1,2 @@
 # school_storage
-Store WIP
+Store WIP assignments
