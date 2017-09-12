@@ -1,4 +1,4 @@
-package fraction;
+package pkg212_hwk1;
 
 import java.util.Scanner;
 
@@ -22,6 +22,8 @@ public interface FractionIF
      * Pre: We have two initialized fractions.
      * Post: If the denominator is not 0 we have valid result.
      * </pre>
+     * @param f1
+     * @param f2
      */
     abstract public void add(Fraction f1, Fraction f2);
 
@@ -32,6 +34,8 @@ public interface FractionIF
      * Pre: We have two initialized fractions.
      * Post: If the denominator is not 0 we have valid result.
      * </pre>
+     * @param f1
+     * @param f2
      */
     abstract public void sub(Fraction f1, Fraction f2);
 

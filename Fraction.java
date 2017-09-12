@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fraction;
+package pkg212_hwk1;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ import java.util.Scanner;
  * 
  *      7 September - no current fraction reduction
  */
-class Fraction
+class Fraction implements FractionIF
 {
     private int numerator;
     private int denominator;
@@ -44,6 +44,7 @@ class Fraction
      * Post:        The resulting fraction must be larger than either f1 or f2.
      * </pre>
      */
+    @Override
     public void add(Fraction f1, Fraction f2)
     {
         Fraction result = new Fraction();
@@ -77,6 +78,7 @@ class Fraction
      * Post:        The resulting fraction must be smaller than Fraction f1.
      * </pre>
      */
+    @Override
     public void sub(Fraction f1, Fraction f2)
     {
         Fraction result = new Fraction();
