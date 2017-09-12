@@ -5,28 +5,58 @@
  */
 
 /**
- *
- * @author Marius
+ *  Author: Marius Panopio
+ *  Description:    This program will compute the sum of
+ *                  an array that is populated by powers of two.
+ *  Compiles:       Yes
+ *  Works:          Yes
  */
 public class ArraySum {
-    int[] array;
+    int[] array = new int[10];
     
+    
+    /**
+     * <pre>
+     * Description: This method will initialize an array by
+     *              populating it with powers of two.
+     * Pre: We have an array with its size declared.
+     * Post:
+     * </pre>
+     */
     public void init()
     {
-        for
-    }
-    
-    public void sum()
-    {
-        int sum = 0;
-        for (int i = 0; i < array.length - 1; i++)
+//        System.out.println("Initializing array.");
+        int element = 1;
+        for (int i = 0; i < array.length; i++)
         {
-            sum = sum + array[i];
+            array[i] = element;
+            element = element * 2;
+//            System.out.printf("Element %d: %d\n", i+1, array[i]);
         }
     }
     
-    static void main(String[] args)
+    /**
+     * <pre>
+     * Description: This method will compute the sum of
+     *              an array's integer elements.
+     * Pre: We have an array of ints
+     * Post: 
+     * </pre>
+     */
+    public void sum()
     {
-//        int[] array = {1,2,4,8,16,32,64,128,256,512};
+        int sum = 0;
+        for (int i = 0; i < array.length; i++)
+        {
+            sum = sum + array[i];
+        }
+        System.out.printf("The sum of the array elements is %d.\n", sum);
+    }
+    
+    static public void main(String[] args)
+    {
+        ArraySum a1 = new ArraySum();
+        a1.init();
+        a1.sum();
     }
 }

@@ -31,11 +31,19 @@ class Fraction
         denominator = y;
     }
 
-    private Fraction()
+    public Fraction()
     {
         
     }
     
+    /**
+     * <pre>
+     * Description: This method adds two fractions together
+     * Pre:         The two fractions being added must be valid fractions
+     *              with a nonzero denominator.
+     * Post:        The resulting fraction must be larger than either f1 or f2.
+     * </pre>
+     */
     public void add(Fraction f1, Fraction f2)
     {
         Fraction result = new Fraction();
@@ -61,6 +69,14 @@ class Fraction
         }
     }
     
+    /**
+     * <pre>
+     * Description: This method will subtract Fraction f2 from
+     *              Fraction f1.
+     * Pre:         Two valid fractions must be used.
+     * Post:        The resulting fraction must be smaller than Fraction f1.
+     * </pre>
+     */
     public void sub(Fraction f1, Fraction f2)
     {
         Fraction result = new Fraction();
@@ -85,6 +101,14 @@ class Fraction
         }
     }
     
+    /**
+     * <pre>
+     * Description: This method prints the fraction in the
+     *              format of numerator, denominator
+     * Pre:         We must have a valid fraction to print.
+     * Post:        
+     * </pre>
+     */
     public void print()
     {
         System.out.printf("%d, %d\n", numerator, denominator);
